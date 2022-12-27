@@ -30,7 +30,7 @@ def chat_server():
 						if sock in SOCKET_LIST:
 							SOCKET_LIST.remove(sock)
 				except:
-					broadcast(server_socket, sock,"[{}] {}".format(sock.getpeername(),"something must come here"))
+					broadcast(server_socket, sock,"[{}] {}".format(sock.getpeername(),"client is offline"))
 	def broadcast(server_socket,client_socket,message):
 		for socket in SOCKET_LIST:
 			if socket != server_socket and socket != client_socket:
