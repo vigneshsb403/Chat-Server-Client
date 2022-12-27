@@ -7,4 +7,4 @@ python3 server.py
 ```
 for client side
 ```
-python3 server.py [host] [port]
+python3 client.py [host] [port]
